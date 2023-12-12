@@ -4,3 +4,5 @@
 AI/domestic-animals/*
 AI/personnes/*
 *.mp4
+*.png
+AI/ReinforcementLearning/__pycache__/*
