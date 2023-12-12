@@ -6,7 +6,7 @@ from common_functions import *
 FOZENLAKE_4x4 = "FrozenLake-v1"     
 FOZENLAKE_8x8 = "FrozenLake8x8-v1"
 
-env_id = FOZENLAKE_8x8 # Name of the environment, >>>> SELECT IT <<<< !!!
+env_id = FOZENLAKE_4x4 # Name of the environment, >>>> SELECT IT <<<< !!!
 
 if env_id == FOZENLAKE_4x4:
     # Training parameters
