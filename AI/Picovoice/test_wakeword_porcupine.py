@@ -2,7 +2,7 @@ import pyaudio
 import pvporcupine
 import struct
 
-# Recognize the wakeword
+# Recognize YOUR wakeword
 
 access_key='RECOPIEZ ICI VOTRE ACCESS_KEY'
 keyword_paths=['RECOPIEZ_ICI_VOTRE_FICHIER.ppn']

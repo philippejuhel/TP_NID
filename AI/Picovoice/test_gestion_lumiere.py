@@ -2,7 +2,6 @@ import pyaudio
 from picovoice import Picovoice
 import struct
 
-# Switch on/off lights for rooms and change their color.
 
 keyword_paths=['RECOPIEZ_ICI_VOTRE_FICHIER.ppn']  # path to Porcupine wake word file (.PPN)
 context_path = 'RECOPIEZ_ICI_VOTRE_FICHIER.rhn'  # path to Rhino context file (.RHN)
@@ -25,9 +24,9 @@ pv = Picovoice(
     keyword_path=keyword_path,
     porcupine_model_path=porcupine_model_path,
     rhino_model_path=rhino_model_path,
-    wake_word_callback=wake_word_callback,
+    wake_word_callback=wake_word_callback, # Function which will be called when the wakeword is recognized
     context_path=context_path,
-    inference_callback=inference_callback)
+    inference_callback=inference_callback) # Function which will be called to process the next sentence
 
 py_audio = pyaudio.PyAudio()
 audio_stream = py_audio.open(
