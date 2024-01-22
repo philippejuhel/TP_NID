@@ -10,3 +10,4 @@ AI/ReinforcementLearning/__pycache__/*
 *.gz
 AI/Lightning/lightning_logs/*
 
+AI/Lightning/model.onnx
