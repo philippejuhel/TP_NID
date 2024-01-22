@@ -6,3 +6,7 @@ AI/personnes/*
 *.mp4
 *.png
 AI/ReinforcementLearning/__pycache__/*
+*-ubyte
+*.gz
+AI/Lightning/lightning_logs/*
+
