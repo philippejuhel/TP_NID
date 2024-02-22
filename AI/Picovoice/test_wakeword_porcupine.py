@@ -4,8 +4,8 @@ import struct
 
 # Recognize YOUR wakeword
 
-access_key='RECOPIEZ ICI VOTRE ACCESS_KEY'
-keyword_paths=['RECOPIEZ_ICI_VOTRE_FICHIER.ppn']
+access_key='PUT YOUR ACCESS KEY HERE'
+keyword_paths=['Salut-machin_fr_raspberry-pi_v3_0_0.ppn']
 model_path='porcupine_params_fr.pv' # To recognize French language
 
 # Create an Porcupine instance to process the sound and recognize words

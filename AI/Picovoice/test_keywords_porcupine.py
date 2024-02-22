@@ -4,7 +4,7 @@ import struct
 
 # Recognize two words (see keywords)
 
-access_key='RECOPIEZ ICI VOTRE ACCESS_KEY'
+access_key='PUT YOUR ACCESS KEY HERE'
 keywords=['picovoice', 'bumblebee']
 
 #Allowed keywords : nok google, hey google, hey siri, pico clock, hey barista, computer, porcupine, terminator, grapefruit, blueberry, americano, bumblebee, grasshopper, jarvis, alexa, picovoice

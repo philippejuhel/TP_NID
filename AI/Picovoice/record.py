@@ -7,7 +7,8 @@ import pyaudio
 
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
-CHANNELS = 1 if sys.platform == 'darwin' else 2
+CHANNELS = 1 #if sys.platform == 'darwin' else 2
+print(CHANNELS)
 RATE = 44100
 RECORD_SECONDS = 5
 

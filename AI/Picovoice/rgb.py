@@ -21,26 +21,22 @@ def switch_off(room):
 def switch_on(room, color):
 	switch_off(room)
 	GPIO.output(room[color], GPIO.HIGH)
-	
+
 
 # Main program
 GPIO.setmode(GPIO.BCM)
 
 # Switch off all LEDs
-for piece in pieces:
-	for led in piece:
+for piece in pieces.keys():
+	for led in pieces[piece]:
 		GPIO.setup(led, GPIO.OUT, initial=GPIO.LOW)
 
-print('Allume cuisine en vert')
-switch_on(LED_CUISINE, GREEN)
-input('Eteindre')
-switch_off(LED_CUISINE)
-print('Allume salon en bleu')
-switch_on(LED_SALON, BLUE)
-input('Eteindre')
-switch_off(LED_SALON)
-print('Allume chambre en rouge')
-switch_on(LED_CHAMBRE, RED)
+for piece in pieces.keys():
+	for couleur, indice in list(zip(['rouge','vert','bleu'],[RED,GREEN,BLUE])):
+		print(f'Allume {piece} en {couleur}')
+		switch_on(pieces[piece], indice)
+		input('Eteindre')
+		switch_off(pieces[piece])
 input('fin')
 
 GPIO.cleanup()
