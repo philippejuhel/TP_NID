@@ -3,7 +3,7 @@ from picovoice import Picovoice
 import struct
 
 
-keyword_paths=['RECOPIEZ_ICI_VOTRE_FICHIER.ppn']  # path to Porcupine wake word file (.PPN)
+keyword_path='RECOPIEZ_ICI_VOTRE_FICHIER.ppn'  # path to Porcupine wake word file (.PPN)
 context_path = 'RECOPIEZ_ICI_VOTRE_FICHIER.rhn'  # path to Rhino context file (.RHN)
 porcupine_model_path='porcupine_params_fr.pv' # To recognize French language
 rhino_model_path='rhino_params_fr.pv' # To recognize French language
